@@ -1,0 +1,56 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+// Our variables
+$base-font-family: 'montserratregular', sans-serif;
+$light-font:       'montserratlight', sans-serif;
+$base-font-size:    1rem;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.8;
+$base-letter-spacing: .1em;
+$secondary-font-family: 'Crimson', serif;
+$header-font:      'montserratregular', sans-serif;
+$spacing-unit:     30px;
+
+$text-color:       rgba(0, 0, 0, 0.8);
+$background-color: rgba(250, 250, 250, 1);
+$brand-color:      rgba(4, 79, 103, 1);
+
+$color-white:       rgba(250, 250, 250, 1);
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$phone-width:            280px;
+$tablet-width:           600px;
+$laptop-width:           1200px;
+$desktop-width:          1600px;
+
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "base";
+@import "fonts/crimson",
+        "fonts/montserrat";
+
+@import "utils/mixins";
+
+@import "components/home-header",
+        "components/buttons";
+
+@import "layout",
+        "layout/navigation",
+        "layout/mobile-menu",
+        "layout/services",
+        "layout/projects",
+        "layout/forms",
+        "layout/contact-form";
+
+
+
+@import "utils/helpers";

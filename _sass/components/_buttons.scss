@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]{
+  background-image: none;
+  background-color: $brand-color;
+  border-color: $brand-color;
+  border-style: solid;
+  border-width: 3px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-style: normal;
+  overflow: hidden;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  transition: background-color 200ms ease-in-out 0s;
+  padding: 1.5em 3em 1.5em;
+  margin: 0 20px;
+}
+.button:hover, .button:focus, .button:active {
+    background-color: $brand-color;
+    border-color: $brand-color;
+}
+.buttonAlt{
+  background-image: none;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(0,0,0,0.5);
+  border: solid 3px rgba(0,0,0,0.5);
+}
+.buttonAlt:hover, .buttonAlt:focus, .buttonAlt:active {
+  background-color: #044F67;
+  border-color: #044F67;
+  color: #fff;
+}

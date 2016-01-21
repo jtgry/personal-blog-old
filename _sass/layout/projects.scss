@@ -1,0 +1,63 @@
+.projects{
+  width: 100%;
+  float: left;
+  padding: 4em 0;
+}
+.project-item{
+  float: left;
+  width: 96%;
+  margin: 1% 2%;
+  display:block;
+  position:relative;
+}
+.project-item img{
+
+}
+.project-item .project-item-overlay{
+  background: $brand-color;
+  color: $color-white;
+  height: 98%;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  transition: opacity .5s;
+}
+.project-item:hover .project-item-overlay{
+  opacity: .9;
+  transition: opacity .5s;
+}
+
+.project-item-overlay-wrapper{
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.project-item-overlay-container{
+  border: solid .2em $color-white;
+  margin: 0 auto;
+  max-width: 60%;
+  padding: 2em;
+  text-align: center;
+}
+h3.project-item-title{
+  color: $color-white;
+  font-size: 1rem;
+
+}
+.project-item-overlay-container p{
+  font-family: 'Montserrat', sans-serif;
+  color: $color-white;
+  font-size: .8rem;
+}
+@include laptop {
+  .project-item{
+    float: left;
+    width: 30%;
+    margin: 2% 1.6%;
+    display: block;
+    position: relative;
+  }
+}

@@ -1,0 +1,193 @@
+/* ==========================================================================
+   Basic
+   ========================================================================== */
+html{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+body{
+  background-color: $background-color;
+  color: $text-color;
+  font-style: normal;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: normal;
+  letter-spacing: $base-letter-spacing;
+  line-height: $base-line-height;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+}
+p {
+  font-size: 1.1rem;
+  font-family: $secondary-font-family;
+  color: $text-color;
+  margin-top:2em;
+  margin-bottom:2em;
+  letter-spacing: -.01em;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+}
+.page-content p:first-of-type:first-letter {
+  font-size: 3.4em;
+  padding: .37em .1em 0 0;
+  margin: 0;
+  float: left;
+  line-height: .6;
+  font-weight: 400;
+	}
+
+/* Clear Drop cap on blockquote*/
+.page-content blockquote p:first-of-type:first-letter {
+font-size: 1.7rem;
+padding: 0; float: none;
+}
+
+a{
+  color: $brand-color;
+  text-decoration: none;
+  //background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 50%);
+  background-repeat: repeat-x;
+  background-size: 3px 3px;
+  background-position: 0 16px;
+
+  &:visited {
+      color: darken($brand-color, 15%);
+  }
+
+  &:hover {
+      color: $text-color;
+  }
+}
+/* ==========================================================================
+   Headers
+   ========================================================================== */
+h1,h2,h3,h4,h5,h6{
+  font-family: $header-font;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+}
+h1{
+  font-size: 3rem;
+  margin: .5em 0 -.7em;
+}
+h2{
+  font-size: 2.5rem;
+  margin: .5em 0 .1em;
+}
+h3{
+  font-size: 2rem;
+  margin: .5em 0 .2em;
+}
+h4{
+  font-size: 1.5rem;
+  margin: .5em 0 .3em;
+}
+h5{
+  font-size: 1.3rem;
+  margin: .5em 0 .4em;
+}
+h6{
+  font-size: 1rem;
+  margin: .5em 0 .5em;
+}
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+ul {
+  list-style: circle inside}
+ol {
+  list-style: decimal inside; }
+ol, ul {
+  padding-left: 0;
+  margin-top: 0; }
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; }
+li {
+  margin-bottom: 1rem; }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1;
+  width: 100%;
+  }
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+th:last-child,
+td:last-child {
+  padding-right: 0; }
+
+img{
+  width: 100%;
+  height: auto;
+}
+blockquote{
+  font-style: italic;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align: center;
+  color: $text-color;
+  font-size: 1.7rem;
+  line-height: 1.5em;
+}
+hr {
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  border-width: 0;
+  border-top: 1px solid $brand-color solid;
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 720px;
+}
+footer{
+  background: #fafafa;
+  float: left;
+  height: auto;
+  width: 100%;
+  padding: 4em 0 1em;
+}
+h2.footer-title{
+  margin-bottom: 1em;
+
+}
+.me{
+  max-width: 15em;
+  border-radius: 50%;
+  margin-bottom: 3em;
+}
+.social-links{
+  margin-bottom: 4em;
+}
+.social-links li{
+   display: inline;
+   text-decoration: none;
+}
+.social-links a{
+  color: $text-color;
+  text-decoration: none;
+  background-image: none;
+}
+.social-links a:hover{
+  color: $brand-color;
+
+}

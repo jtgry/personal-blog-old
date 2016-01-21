@@ -1,0 +1,66 @@
+/* ==========================================================================
+   Home Banner
+   ========================================================================== */
+
+.home-header{
+  @include banner;
+  min-height: 80vh;
+  max-height: 80%;
+  border-bottom: .6rem $brand-color solid;
+
+}
+.home-header-content{
+  padding: 0 2%;
+  font-size: 20%;
+}
+.home-header-inner{
+  padding: 2em;
+  margin: 0 auto;
+
+}
+
+.home-header-title{
+  color: $color-white;
+  font-size: 6rem;
+  letter-spacing: .2em;
+  margin-bottom: .1em;
+  margin-left: .2em;
+  text-transform: uppercase;
+}
+.home-header-subtitle{
+  color: $color-white;
+  font-size: 2rem;
+  letter-spacing: .2em;
+  padding: 1em 0;
+  border-top: .25rem solid $color-white;
+  border-bottom: .25rem  solid $color-white;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+  max-width: 53rem;
+}
+
+.home-header-tag{
+  color: $color-white;
+  font-size: .8rem;
+}
+.home-header .buttonAlt{
+  color: $color-white;
+  border-color: $color-white;
+}
+
+.home-header .buttonAlt:hover, .buttonAlt:focus, .buttonAlt:active {
+  background-color: $brand-color;
+  border-color: $brand-color;
+  color: $color-white;
+}
+@include phone {
+
+}
+@include laptop {
+  .home-banner{
+    background-attachment: fixed;
+  }
+}
+@include desktop {
+
+}

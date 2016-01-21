@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Nav
+   ========================================================================== */
+.nav-bar{
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+}
+.navLogo{
+  font-size: 1.5rem;
+  padding: .6em .4em;
+  margin: 0;
+  margin-left: 1em;
+  margin-top: 1em;
+  position: absolute;
+  color: $color-white;
+  background-color: $brand-color;
+}
+.nav-items{
+  position: absolute;
+  top: 2em;
+  right: 1.5em;
+}
+
+.nav-items ul li{
+  display: inline;
+  list-style: none;
+  padding: 0 1em;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: $base-font-size;
+}
+.nav-items ul li a{
+  color: $color-white;
+}
+.nav-items ul li a:hover {
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(250, 250, 250, 1) 50%);
+  background-repeat: repeat-x;
+  background-size: 3px 3px;
+  background-position: 0 83px;
+}
+.nav-items ul li a.active {
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(250, 250, 250, 1) 50%);
+  background-repeat: repeat-x;
+  background-size: 3px 3px;
+  background-position: 0 83px;
+}
