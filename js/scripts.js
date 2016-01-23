@@ -16,7 +16,7 @@ $(document).ready(function () {
       $(".bottom-menu").toggleClass("bottom-animate");
       $(".menui").toggleClass("iconDark");
   });
-  $(".mobilenav a").click(function () {
+  $(".mobile-nav a").click(function () {
       $(".mobile-nav").fadeToggle(500);
       $(".top-menu").toggleClass("top-animate");
       $(".mid-menu").toggleClass("mid-animate");
