@@ -11,6 +11,7 @@ layout: default
     </div>
   </div>
 </section>
+<section id="services">
 {% for service in site.services %}
 <div class="row">
     <div class="half-column {% if service.image_alignment == 'left' %} pull-left {% else %} pull-right {% endif %} 1">
@@ -28,6 +29,7 @@ layout: default
     </div>
   </div>
 {% endfor %}
+</section>
 <section id="projects" class="projects">
   <h2 class="content-block-title 1">My work</h2>
   <hr class="content-block-hr 1">
