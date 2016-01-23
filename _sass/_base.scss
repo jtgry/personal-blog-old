@@ -39,8 +39,10 @@ body{
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: "liga" on;
 }
-p {
+p,a,ul,li,ol,ul,tr,td{
   font-size: 1.1rem;
+}
+p {
   font-family: $secondary-font-family;
   color: $text-color;
   margin-top:2em;
