@@ -4,7 +4,26 @@
 html{
   overflow-y: scroll;
   overflow-x: hidden;
-  font-size: 16px;
+}
+@include phone {
+  html{
+    font-size: 70%;
+  }
+}
+@include tablet {
+  html{
+    font-size: 80%;
+  }
+}
+@include laptop {
+  html{
+    font-size: 90%;
+  }
+}
+@include desktop {
+  html{
+    font-size: 100%;
+  }
 }
 body{
   background-color: $background-color;
@@ -72,6 +91,7 @@ h1,h2,h3,h4,h5,h6{
   text-transform: uppercase;
   margin: 0;
 }
+
 h1{
   font-size: 3rem;
   margin: .5em 0 -.7em;
@@ -96,6 +116,7 @@ h6{
   font-size: 1rem;
   margin: .5em 0 .5em;
 }
+
 /* ==========================================================================
    Lists
    ========================================================================== */
@@ -155,9 +176,10 @@ hr {
 }
 
 .container{
-  width: 100%;
+  width: auto;
   margin: 0 auto;
   max-width: 720px;
+  padding: 0 2%;
 }
 footer{
   background: #fafafa;

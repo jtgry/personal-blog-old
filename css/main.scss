@@ -7,7 +7,7 @@
 // Our variables
 $base-font-family: 'montserratregular', sans-serif;
 $light-font:       'montserratlight', sans-serif;
-$base-font-size:    1rem;
+$base-font-size:    16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.8;
 $base-letter-spacing: .1em;
@@ -34,11 +34,10 @@ $desktop-width:          1600px;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
+@import "utils/mixins";
 @import "base";
 @import "fonts/crimson",
         "fonts/montserrat";
-
-@import "utils/mixins";
 
 @import "components/home-header",
         "components/buttons";
