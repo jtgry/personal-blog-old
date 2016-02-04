@@ -5,8 +5,8 @@ layout: default
 <section id="intro" class="page-content">
   <div class="content-block">
     <h2 class="content-block-title 1">BUILT IN THE SOUTH.</h2>
-    <hr class="content-block-hr 1">
-    <div class="container 1">
+    <hr class="content-block-hr 2">
+    <div class="container 3">
       <p>Born and raised in central Alabama, I have a passion for designing and developing for the web and a propensity for consistent branding. I have over five years of web design and development experience in the professional community and am constantly looking for opportunities to work with companies to increase and enhance their digital presence.</p>
     </div>
   </div>
@@ -14,15 +14,15 @@ layout: default
 <section id="services">
 {% for service in site.services %}
 <div class="row">
-    <div class="half-column {% if service.image_alignment == 'left' %} pull-left {% else %} pull-right {% endif %} 1">
+    <div class="half-column {% if service.image_alignment == 'left' %} pull-left {% else %} pull-right {% endif %}">
       <div class="vertical">
-        <object type="image/svg+xml" data="{{ service.image_path }}">Your browser does not support SVG</object>
+        <object class="service-icon" type="image/svg+xml" data="{{ service.image_path }}">Your browser does not support SVG</object>
       </div>
     </div>
     <div class="half-column brand-color">
       <div class="vertical">
         <h2 class="content-block-title">{{ service.title }}</h2>
-        <div class="container">
+        <div class="container content-text">
           {{ service.content }}
         </div>
       </div>
@@ -31,8 +31,8 @@ layout: default
 {% endfor %}
 </section>
 <section id="projects" class="projects">
-  <h2 class="content-block-title 1">My work</h2>
-  <hr class="content-block-hr 1">
+  <h2 class="content-block-title">My work</h2>
+  <hr class="content-block-hr">
   {% for project in site.projects %}
   <a href="{{ project.link }}">
     <div class="project-item">

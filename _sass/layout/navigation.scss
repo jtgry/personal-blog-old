@@ -3,18 +3,61 @@
    ========================================================================== */
 .nav-bar{
   width: 100%;
+  height: 80px;
   position: fixed;
   z-index: 9999;
 }
-.navLogo{
-  font-size: 1.5rem;
-  padding: .6em .4em;
+.nav-solid{
+  background-color: $color-white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.nav-solid .menui{
+  background-color: $brand-color;
+}
+.nav-solid .top-menu {
+    top: 0px;
+    width: 30px;
+    height: 3px;
+}
+.nav-solid .mid-menu {
+    top: 8px;
+    width: 30px;
+    height: 3px;
+}
+.nav-solid .bottom-menu {
+    top: 16px;
+    width: 30px;
+    height: 3px;
+}
+.nav-solid .top-animate {
+    top: 8px !important;
+}
+.nav-solid .mid-animate {
+    opacity: 0;
+}
+.nav-solid .bottom-animate {
+    top: 8px !important;
+}
+.nav-solid .nav-logo{
+  font-size: 16px;
+  padding: 8px 6px;
   margin: 0;
-  margin-left: 1em;
-  margin-top: 1em;
+  margin-left: 17px;
+  margin-top: 17px;
+}
+.nav-clear{
+  background-color: rgba(255,255,255,0);
+}
+.nav-logo{
+  font-size: 24px;
+  padding: 14px 11px;
+  margin: 0;
+  margin-left: 25px;
+  margin-top: 25px;
   position: absolute;
   color: $color-white;
   background-color: $brand-color;
+  transition: all .2s ease-in-out;
 }
 .nav-items{
   position: absolute;

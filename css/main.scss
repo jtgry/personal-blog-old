@@ -40,7 +40,8 @@ $desktop-width:          1600px;
         "fonts/montserrat";
 
 @import "components/home-header",
-        "components/buttons";
+        "components/buttons",
+        "components/animations";
 
 @import "layout",
         "layout/navigation",
