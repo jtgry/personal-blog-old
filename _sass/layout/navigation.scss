@@ -6,6 +6,7 @@
   height: 80px;
   position: fixed;
   z-index: 9999;
+  transition: all .5s ease-in-out;
 }
 .nav-solid{
   background-color: $color-white;
