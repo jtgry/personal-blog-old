@@ -1,0 +1,22 @@
+.site-footer{
+  width: 100%;
+  font-size: 80%;
+}
+.footer-content{
+  background: $color-brand;
+  text-align: center;
+  padding: 4em 0;
+}
+a.footer-title{
+  color: $color-white;
+  text-transform: uppercase;
+  font-family: $header-font-family;
+  letter-spacing: .5em;
+  text-decoration: none;
+}
+.footer-logo{
+  height: 10vh;
+  width: auto;
+  margin: 0 auto;
+  margin-bottom: $spacing-unit / 4;
+}

@@ -1,0 +1,83 @@
+---
+layout: home
+---
+<article>
+  {% for block in site.home %}
+  {% if block.type == "block-feature-text" %}
+  <section class="block-feature" >
+    <h2 class="block-feature-title">{{ block.title }}</h2>
+      <div class="container">
+        <div class="block-feature-text">
+          {{ block.content }}
+        </div>
+        <a class="button" href="/journal">Learn More</a>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+  {% if block.type == "block-feature-image" %}
+  <section class="block-feature-image" style="background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{ block.image_path }});">
+  </section>
+  {% endif %}
+  {% if block.type == "block-banner" %}
+  <section class="block-banner" style="background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{ block.image_path }});">
+    <div class="vertical">
+      <div class="container">
+        <h2 class="block-banner-header">{{ block.title }}</h2>
+        <p class="block-banner-text">{{ block.content | strip_html }}</p>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+  {% if block.type == "block-featured-posts" %}
+  <section class="block-featured-posts">
+    <div class="">
+      {% for post in site.posts limit:3 %}
+        {% if post.featured == "true" %}
+          <div class="block-featured-post">
+            <div class="block-featured-post-image" style="background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{ post.image_path }});"></div>
+            <h3 class="block-featured-post-title">{{ post.title }}</h3>
+            <p class="block-featured-post-content">{{ post.content | strip_html | truncate: 240 }}</p>
+            <a class="button" href="{{ post.url }}">Read More</a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+  {% if block.type == "block-projects" %}
+  <section class="block-featured-posts">
+    <h2 class="block-feature-title">{{ block.title }}</h2>
+    {% for project in site.projects %}
+      {% capture modulo %}{{ forloop.index0 | mod:3 }}{% endcapture %}
+        {% if modulo == '0' or forloop.first %}
+        {% endif %}
+          <div class="block-featured-post{{ cycle 'alpha', '', 'omega' }}">
+            <div class="block-project-image" style="background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url({{ project.image_path }});"></div>
+            <h4 class="block-featured-post-title">{{ project.title }}</h4>
+            <p class="block-featured-post-content">{{ project.content | strip_html | truncate: 160 }}</p>
+            <a class="button" href="{{ project.website }}">Learn More</a>
+          </div>
+        {% if modulo == '2' or forloop.last %}
+        {% endif %}
+    {% endfor %}
+  </section>
+  {% endif %}
+  {% if block.type == "block" %}
+  <section class="block">
+    <div class="block-image {% if block.image_alignment == "right" %}pull-right{% endif %}" style="background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{ block.image_path }});">
+    </div>
+    <div class="block-content">
+      <div class="block-text vertical">
+        <div class="container">
+          <h2 class="block-title">{{ block.title }}</h2>
+          <hr />
+          {{ block.content }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+  {% endfor %}
+  {% include contact.html %}
+</article>
