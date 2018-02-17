@@ -40,7 +40,7 @@ gulp.task('init-watch', () => {
     $.watch('src/images/**/*', () => gulp.start('images'))
     $.watch('src/images/**/*', () => gulp.start('images-resize-small'))
     $.watch('src/images/**/*', () => gulp.start('images-resize-medium'))
-    $.watch('src/videos/**/*', () => gulp.start('videos'))    
+   
 })
 
 gulp.task('build', () => {
@@ -104,11 +104,6 @@ gulp.task('js', () => {
 gulp.task('fonts', () => {
     return gulp.src('src/fonts/**/*.{woff,woff2}')
         .pipe(gulp.dest('static/fonts'));
-});
-
-gulp.task('videos', () => {
-    return gulp.src('src/videos/**/*.mp4')
-        .pipe(gulp.dest('static/videos'));
 });
 
 gulp.task('images', () => {
