@@ -134,10 +134,10 @@ h1.header-subtitle{
     $delay: 1.5s
   );
   @media (max-width: $tablet) {
-    height: 20vh;
+    height: 40vh;
   }
   @media (max-width: $phone) {
-    height: 10vh;
+    height: 40vh;
   }
 }
 .header-text{
