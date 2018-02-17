@@ -1,8 +1,10 @@
 <section class="block-section">
   <div class="block-image {{ if isset .Params "alignment" }}{{ index .Params "alignment" }}{{ end }}">
+    <div class="vertical">
       <div class="container">
         <img src="{{ .Params.image }}" alt="{{ .Params.Title }}">
       </div>
+    </div>
   </div>
   <div class="block-content">
     <div class="vertical">
