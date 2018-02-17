@@ -15,10 +15,10 @@
             <a href="#about">About</a>
           </li>
           <li>
-            <a href="#about">My Work</a>
+            <a href="#work">My Work</a>
           </li>
           <li>
-            <a class="nav-calltoaction typeform-share link" href="https://tgray089.typeform.com/to/yLMMKM" data-mode="1" target="_blank">Start Your Project</a>
+            <a class="nav-calltoaction" href="#contact">Start Your Project</a>
           </li>
     </ul>
     <a href="#" class="nav-button" id="navButton">
@@ -27,7 +27,7 @@
   </div>
 </nav>
 <nav class="mobile-nav">
-  <div class="mobile-nav-items vertical">
+  <div class="mobile-nav-items">
     <ul class="vertical">
       {% for page in site.pages %}
         {% if page.menu == "true" %}
@@ -37,7 +37,13 @@
         {% endif %}
       {% endfor %}
           <li>
-            <a href="/journal">Journal</a>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#work">My Work</a>
+          </li>
+          <li>
+            <a class="nav-calltoaction" href="#contact">Start Your Project</a>
           </li>
     </ul>
   </div>

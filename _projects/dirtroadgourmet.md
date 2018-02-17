@@ -1,11 +1,10 @@
 ---
-layout: two-column
-title:  "The Eagle and The Arrow"
-date:   2016-06-29 22:44:18 -0500
-author: Tyler
-categories: Journal
-image_path: "/images/eagle.jpg"
-featured: "true"
+layout: post
+title:  "Dirt Road Gourmet"
+date:   2016-06-23 22:44:18 -0500
+categories: Project
+image_path: "/images/projects/dirtroad.jpg"
+website: "https://dirtroadgourmet.com"
 ---
 An Eagle sat on a lofty rock, watching the movements of a Hare
 whom he sought to make his prey.  An archer, who saw the Eagle

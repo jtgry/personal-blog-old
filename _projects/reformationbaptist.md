@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  "The Fox and The Crow"
-date:   2016-07-01 22:44:18 -0500
-author: Tyler
-categories: Journal
-image_path: "/images/fox.jpg"
-featured: "true"
+title:  "Reformation Baptist"
+date:   2016-06-23 22:44:18 -0500
+categories: Project
+image_path: "/images/projects/reformationbaptist.jpg"
+website: "https://reformationbaptist.com"
 ---
 A Crow having stolen a bit of meat, perched in a tree and held it
 in her beak.  A Fox, seeing this, longed to possess the meat

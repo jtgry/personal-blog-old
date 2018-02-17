@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Fort Toulouse - Fort Jackson"
-date:   2016-06-23 22:44:18 -0500
+date:   2017-06-23
 categories: Project
 image_path: "/images/projects/forttoulouse.jpg"
 website: "https://fttoulousejackson.org"

@@ -68,7 +68,7 @@
 .nav-button {
 	display: none;
   position: absolute;
-  margin-top: -2.6em;
+  margin-top: -1.6em;
   right: 20px;
   z-index: 1600;
   @media (max-width: $tablet) {
@@ -77,15 +77,17 @@
 }
 a.nav-calltoaction{
   background: $color-brand;
+  color: $color-white;
   &:hover {
     background: darken($color-brand, 5%);
   }
 }
 @import "../burger";
 .burger-icon {
-	@include burger(25px, 2px, 5px, $color-black);
+	@include burger(25px, 2px, 5px, $color-white);
 }
 .nav-button.is-active .burger-icon {
+  @include burger(25px, 2px, 5px, $color-brand);
 	@include burger-to-cross;
 }
 
@@ -116,7 +118,7 @@ a.nav-calltoaction{
 .mobile-nav-items a{
   display: block;
   padding: 1em 0;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
 }
 .mobile-nav-items a:hover{
