@@ -15,11 +15,11 @@
     {{ end }}
     <script defer src="/js/fa-light.min.js"></script>
     <script defer src="/js/fontawesome.min.js"></script>
-    
+
+    {{ template "_internal/google_analytics.html" . }}
   </head>
   <body>
   {{ block "navigation" . }}{{ partial "site/navigation.html" . }}{{ end }}
-  {{ block "search" . }}{{ partial "site/search.html" . }}{{ end }}
 
   {{ block "main" . }}{{ end }}
 

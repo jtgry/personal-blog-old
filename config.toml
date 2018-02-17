@@ -6,6 +6,8 @@ disableKinds = ["RSS"]
 enableRobotsTXT = true
 disableAliases = true
 
+googleAnalytics = "UA-114350169-1"
+
 # add redirects/headers
 [outputs]
 home = ["HTML", "RSS", "JSON", "REDIRECTS", "HEADERS"]
