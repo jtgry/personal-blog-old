@@ -40,15 +40,14 @@ gulp.task('init-watch', () => {
     $.watch('src/images/**/*', () => gulp.start('images'))
     $.watch('src/images/**/*', () => gulp.start('images-resize-small'))
     $.watch('src/images/**/*', () => gulp.start('images-resize-medium'))
-   
 })
 
 gulp.task('build', () => {
-    runSequence(['sass', 'js', 'fonts', 'images', 'images-resize-small', 'images-resize-medium', 'videos', 'pub-delete'], 'hugo')
+    runSequence(['sass', 'js', 'fonts', 'images', 'images-resize-small', 'images-resize-medium', 'pub-delete'], 'hugo')
 })
 
 gulp.task('build-preview', () => {
-    runSequence(['sass', 'js', 'fonts', 'images', 'images-resize-small', 'images-resize-medium', 'videos', 'pub-delete'], 'hugo-preview')
+    runSequence(['sass', 'js', 'fonts', 'images', 'images-resize-small', 'images-resize-medium', 'pub-delete'], 'hugo-preview')
 })
 
 gulp.task('hugo', (cb) => {
