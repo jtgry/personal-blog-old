@@ -1,0 +1,275 @@
+.block-section{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: -8.46px;
+}
+.block-image{
+  display: table;
+  width: 50%;
+  min-height: 50vw;
+  max-height: 50vw;
+  height: 50vw;
+  background: $color-off-white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  @include span(1/3);
+  @media (max-width: $tablet) {
+    @include stack();
+    display: table;
+    min-height: 50vw;
+    max-height: 50vw;
+    height: 50vw;
+  }
+  img{
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+.block-content{
+  display: table;
+  min-height: 50vw;
+  max-height: 50vw;
+  height: 50vw;
+  background: $color-off-white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  @include span(2/3);
+  @media (max-width: $tablet) {
+    @include stack();
+    display: table;
+    min-height: 70vw;
+    max-height: 70vw;
+    height: 70vw;
+    padding: $spacing-unit / 2 0 $spacing-unit / 4;
+  }
+  p{
+    font-size: 2.7rem;
+    @media (max-width: $tablet) {
+      font-size: 1.8rem;
+    }
+    @media (max-width: $phone) {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.block-feature{
+  display: table;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  background: $color-off-white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+}
+h2.block-feature-title{
+  font-size: 1.2rem;
+  letter-spacing: .4em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $color-brand;
+  margin-bottom: $spacing-unit / 1.5;
+  @media (max-width: $phone) {
+    font-size:  200%;
+  }
+}
+.block-feature-text{
+  width: 120%;
+  margin-left: -10%;
+  margin-bottom: $spacing-unit;
+  text-align: center;
+  @media (max-width: $laptop) {
+    width: 100%;
+    margin: 0;
+  }
+  @media (max-width: $tablet) {
+
+  }
+  p{
+    font-size: 3rem;
+    @media (max-width: $tablet) {
+      font-size: 1.8rem;
+      text-align: left;
+    }
+    @media (max-width: $phone) {
+      font-size: 1.4rem;
+    }
+  }
+
+}
+.block-features{
+  display: table;
+  background: $color-white;
+  width: 50%;
+  min-height: 50vw;
+  max-height: 50vw;
+  height: 50vw;
+  overflow-y: hidden;
+  @include span(1/2);
+  @media (max-width: $tablet) {
+    @include stack();
+    display: table;
+    min-height: 70vw;
+    max-height: 70vw;
+    height: 70vw;
+  }
+  .block-small{
+    display: table;
+    width: 50%;
+    min-height: 25vw;
+    max-height: 25vw;
+    height: 25vw;
+    overflow-y: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @include span(1/2, $cycle: 2);
+    @media (max-width: $tablet) {
+      min-height: 50vw;
+      max-height: 50vw;
+      height: 50vw;
+    }
+    @media (max-width: $phone){
+      @include span(2/2, $cycle: 1);
+    }
+    .block-small-overlay{
+      display: table;
+      width: 100%;
+      height: 100%;
+      .block-small-content{
+        display: table;
+        box-shadow: inset 0 0 0 .2em $color-transparent;
+        text-align: center;
+        height: 93%;
+        width: 93%;
+        margin: 3%;
+        h3{
+          margin: 0;
+          margin-top: $spacing-unit / 2;
+          color: $color-white;
+          text-transform: uppercase;
+          letter-spacing: .1em;
+          font-size: 1.6rem;
+          font-weight: 600;
+          @media (max-width: $phone) {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+  }
+}
+.block-text{
+  font-size: 100%;
+  h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: .8rem;
+    margin: 0;
+    margin-bottom: $spacing-unit / 4;
+    @media (max-width: $laptop) {
+      font-size:  1.5rem;
+      letter-spacing: .5rem;
+    }
+    @media (max-width: $phone) {
+      font-size:  1.2rem;
+      letter-spacing: .3rem;
+    }
+  }
+  hr{
+    width: 4em;
+    height: .5em;
+    margin: 0;
+    margin-top: $spacing-unit / 4;
+    margin-bottom: $spacing-unit / 2;
+    background: $color-brand-alt;
+  }
+  button{
+    margin-left: 0;
+    margin-top: 0;
+  }
+  @media (max-width: $tablet) {
+    margin: 0;
+    padding: 0;
+  }
+}
+.block-title{
+  margin-bottom: 0;
+}
+
+.block-news{
+  width: 100%;
+  height: 30vh;
+  .block-news-item{
+    display: table;
+    min-height: 30vh;
+    max-height: 30vh;
+    height: 30vh;
+    overflow-y: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @include span(1/6);
+    @media (max-width: $tablet){
+      @include span(1/3, $cycle: 3);
+    }
+    @media (max-width: $phone){
+      @include span(1/2, $cycle: 2);
+    }
+    .block-news-item-overlay{
+      display: table;
+      min-height: 30vh;
+      max-height: 30vh;
+      height: 30vh;
+      width: 100%;
+      overflow-y: hidden;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    a{
+      color: $color-white;
+    }
+    h4{
+      font-size: .8rem;
+      color: $color-white;
+      margin: 0;
+      padding-bottom: $spacing-unit / 2;
+      @media (max-width: $tablet) {
+        font-size: .6rem;
+      }
+    }
+    .block-news-item-content{
+      padding: 1em;
+
+    }
+    .block-news-item-date{
+      height: 4em;
+      width: 4em;
+      padding: 1em;
+      margin-left: auto;
+      color: $color-white;
+      text-transform: uppercase;
+      font-size: .7rem;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+}

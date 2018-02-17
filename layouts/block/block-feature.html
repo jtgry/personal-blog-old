@@ -1,0 +1,24 @@
+<section class="block-section">
+  <div class="block-features {{ if isset .Params "alignment" }}{{ index .Params "alignment" }}{{ end }}">
+    {{ range first 4 (where .Site.Pages "Params.featured" true) }}
+      <a class="block-small" style="background-image: url(images-resized/small/{{ .Params.image }});" href="{{ .URL }}">
+        <div class="block-small-overlay {{ if isset .Params "color" }}{{ .Params.color }}{{ else }}color-grey-light-bg {{ end }}">
+          <button class="button draw meet block-small-content">
+            <i class="fal fa-{{ if isset .Params "icon" }}{{ .Params.icon }}{{ else }}rocket{{ end }} fa-5x color-white"></i>
+            <h3>{{ .Title }}</h3>
+          </button>
+        </div>
+      </a>
+     {{ end }}
+  </div>
+  <div class="block-content" style="background-image:url({{ .Params.image }})">
+      <div class="block-text vertical">
+      <div class="container">
+          <hr />
+          <h2 class="block-title">{{ .Title }}</h2>
+          {{ .Content }}
+          <button class="button draw" href="{{ .Params.button }}">Learn More <i class="fal fa-long-arrow-right fa-1x"></i></button>
+      </div>
+      </div>
+  </div>
+</section>

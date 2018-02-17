@@ -1,0 +1,10 @@
+{{ define "main" }}
+    {{ block "header" . }}{{ partial "site/header.html" . }}{{ end }}
+    {{ range  where .Data.Pages.ByWeight "Section" "home" }}
+        {{ .Render .Params.layout }}
+    {{ end }}
+    {{ block "contact" . }}{{ partial "site/contact.html" . }}{{ end }}
+{{ end }}
+
+
+

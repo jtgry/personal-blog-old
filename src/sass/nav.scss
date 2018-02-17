@@ -1,0 +1,197 @@
+.nav{
+  width: 100%;
+  position: absolute;
+  padding-top: $spacing-unit / 4;
+  background-color: $color-transparent;
+  line-height: 0;
+  text-transform: uppercase;
+  display: table;
+  z-index: 1800;
+}
+.nav-off{
+  display: none;
+}
+.nav-title a{
+  float: left;
+  font-family: $header-font-family;
+  color: $color-brand;
+  font-weight: 500;
+  padding-left: $spacing-unit / 2;
+  padding-top: $spacing-unit / 4;
+  text-decoration: none;
+  position: absolute;
+}
+.nav-logo{
+  height: 3em;
+  width: auto;
+}
+.nav-items{
+  display: block;
+  float: right;
+  font-family: $header-font-family;
+  font-weight: 400;
+  padding: 2em 0;
+  padding-right: $spacing-unit / 4;
+}
+.nav-items ul{
+  margin: 0;
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+.nav-items li{
+  display: inline-block;
+}
+.nav-items a{
+  font-weight: 800;
+  color: $color-brand;
+  font-family: $alt-font-family;
+  font-size: .7rem;
+  letter-spacing: .2em;
+  padding: $spacing-unit / 4;
+  margin: 0 $spacing-unit / 4;
+  -webkit-transition: color .2s linear; /* Saf3.2+, Chrome */
+  -moz-transition: color .2s linear; /* FF3.7+ */
+  -o-transition: color .2s linear; /* Opera 10.5 */
+  transition: color .2s linear;
+}
+.nav-items a:hover{
+  text-decoration: none;
+  color: $color-brand-alt;
+  -webkit-transition: color .2s linear; /* Saf3.2+, Chrome */
+  -moz-transition: color .2s linear; /* FF3.7+ */
+  -o-transition: color .2s linear; /* Opera 10.5 */
+  transition: color .2s linear;
+}
+a.nav-calltoaction{
+  color: $color-white;
+  background: $color-brand;
+  padding:  $spacing-unit / 3.8 $spacing-unit / 2;
+  &:hover {
+    color: $color-white;
+  }
+}
+.nav-items.dark a{
+  font-weight: 500;
+  color: $color-black;
+  padding: 2em 1em;
+  -webkit-transition: color .2s linear; /* Saf3.2+, Chrome */
+  -moz-transition: color .2s linear; /* FF3.7+ */
+  -o-transition: color .2s linear; /* Opera 10.5 */
+  transition: color .2s linear;
+}
+.nav-items.dark a.nav-calltoaction{
+  color: $color-white;
+  background: $color-brand;
+  padding:  $spacing-unit / 3.8 $spacing-unit / 2;
+  &:hover {
+    color: $color-white;
+    background: darken($color-brand, 5%);
+  }
+}
+a.nav-button {
+	display: none;
+  position: absolute;
+  margin-top: -2em;
+  right: 20px;
+  z-index: 1800;
+  @media (max-width: $tablet) {
+    display: inline-block;
+  }
+}
+@import "burger";
+.burger-icon {
+	@include burger(30px, 3px, 5px, $color-brand);
+}
+.dark .burger-icon {
+	@include burger(30px, 3px, 5px, $color-black);
+}
+.nav-button.is-active .burger-icon {
+	@include burger-to-cross($color-black);
+}
+.nav-dropdown{
+  position: relative;
+  text-align: center;
+}
+.nav-dropdown li{
+  position: relative;
+  padding-bottom: $spacing-unit / 2;
+}
+//Mobile Menu
+
+.mobile-nav{
+  width: 100%;
+  height: 100%;
+  z-index: 1500;
+  text-transform: uppercase;
+  text-align: center;
+  display: none;
+  background: $color-white;
+  position: fixed;
+}
+.mobile-nav-items{
+  width: 100vw;
+  height: 100vh;
+  display: table;
+  letter-spacing: .2em;
+}
+.mobile-nav-items ul{
+  width: 100vw;
+  height: 100vh;
+}
+.mobile-nav-items a{
+  font-weight: 800;
+  font-family: $alt-font-family;
+  letter-spacing: .1em;
+  display: block;
+  padding: 2em 0;
+  width: 100%;
+  margin: 0 auto;
+}
+.mobile-nav-items a:hover{
+  text-decoration: none;
+  color: $color-brand;
+  -webkit-transition: color .3s linear; /* Saf3.2+, Chrome */
+  -moz-transition: color .3s linear; /* FF3.7+ */
+  -o-transition: color .3s linear; /* Opera 10.5 */
+  transition: color .3s linear;
+}
+.quick-links{
+  width: 100%;
+  height: 2em;
+  position: absolute;
+  line-height: 0;
+  margin-top: .1rem;
+  text-transform: uppercase;
+  background: $color-brand;
+  display: table;
+  z-index: 1800;
+}
+.quick-links ul{
+  float: right;
+  margin: 0;
+  @media (max-width: $tablet) {
+    text-align: center;
+    float: none;
+  }
+}
+.quick-links li{
+  display: inline-block;
+  margin: 0;
+}
+.quick-links a{
+  font-family: $header-font-family;
+  color: $color-white;
+  text-transform: uppercase;
+  padding: $spacing-unit / 6;
+  font-size: .5rem;
+  font-weight: 800;
+  letter-spacing: .2em;
+}
+img.search-icon{
+  margin-right: 0;
+  margin-top: -.2em;
+  display: inline-block;
+  height: 1.5em;
+  width: auto;
+}

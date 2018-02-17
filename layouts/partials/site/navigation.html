@@ -1,0 +1,21 @@
+<nav id="nav" class="nav fade-in-slow">
+  <div class="nav-title">
+    <a href="{{ .Site.BaseURL }}" alt="{{ .Site.Title }}"><img class="nav-logo">{{ .Site.Title }}</a>
+  </div>
+  <div class="nav-items">
+    <ul>
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+      <li>
+        <a href="{{ .URL }}" class="navbar-item {{ if $currentPage.IsMenuCurrent "main" . }}active{{end}}">{{ .Name }}</a>
+      </li>
+      {{end}}
+      <li>
+          <a class="nav-calltoaction" id="apply" href="#contact" title="Start Your Project">Start Your Project</a>
+      </li>
+    </ul>
+    <a href="#" class="nav-button" id="navButton">
+      <span class="burger-icon"></span>
+    </a>
+  </div>
+</nav>

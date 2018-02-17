@@ -1,0 +1,59 @@
+@import 'node_modules/jeet/jeet';
+
+// Our variables
+$base-font-family: 'lora', serif;
+$base-font-size:   16px;
+$base-font-weight: 500;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.7;
+
+$alt-font-family: 'oswald', sans-serif;
+
+$header-font-family: 'oswald', sans-serif;
+
+$spacing-unit:     4rem;
+$color-brand:      rgba(15, 60, 91, 1);
+$color-brand-alt:  rgba(57, 115, 103, 1);
+$color-white:      rgba(253, 255, 252, 1);
+$color-alt-one:    rgba(226, 218, 219, 1);
+$color-alt-two:    rgba(228, 233, 231, 1);
+$color-black:      rgba(30,30,30,0.9);
+$color-white:      rgba(255,255,255,1);
+$color-off-white:  rgba(252,252,252,1);
+$color-transparent:rgba(0,0,0,0);
+$color-grey:       rgba(200,200,200,0.95);
+$color-grey-light: lighten($color-grey, 10%);
+$color-grey-dark:  darken($color-grey, 20%);
+
+$height-bottom: 100;
+$height-middle: 200;
+$height-high: 300;
+$height-top: 1000;
+
+// Width of the content area
+$content-width:    780px;
+$phone:            400px;
+$tablet:           800px;
+$laptop:           1400px;
+$desktop:          1600px;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import SCSS
+@import
+    "animate/animate.scss",
+    "animations",
+    "base",
+    "buttons",
+    "nav",
+    "subnav",
+    "layout",
+    "blocks",
+    "forms",
+    "footer",
+    "util"
+;

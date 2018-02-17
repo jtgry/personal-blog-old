@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{ block "page-header" . }}{{ partial "site/page-header.html" . }}{{ end }}
+{{ block "sub-nav" . }}{{ partial "site/subnav.html" . }}{{ end }}
+    <article class="page">
+      <div class="container">
+          <h2 class="page-subtitle">{{ .Params.subtitle }}</h2>
+        {{ .Content }}
+        <h3>Search:</h3>
+        <input id="search" type="text" id="searchbox" placeholder="Just start typing...">
+     
+        <h3>Results:</h3>
+        <ul id="results"></ul>
+      </div>
+    </article>
+
+{{ end }}

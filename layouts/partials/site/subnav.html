@@ -1,0 +1,8 @@
+<ul class="sub-nav">
+  {{ $currentPage := . }}
+  {{ range .Site.Menus.about }}
+      <li class="sub-nav-item">
+        <a class="{{ if $currentPage.IsMenuCurrent "about" . }}active{{ end }}" href="{{ .URL }}">{{ .Title }}</a>
+      </li>
+  {{ end }}
+</ul>

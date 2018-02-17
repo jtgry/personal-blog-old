@@ -1,0 +1,267 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'playfair_displaybold';
+  src: url("/fonts/playfairdisplay/playfairdisplay-bold-webfont.woff2") format("woff2"), url("/fonts/playfairdisplay/playfairdisplay-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'playfair_displaybold_italic';
+  src: url("/fonts/playfairdisplay/playfairdisplay-bolditalic-webfont.woff2") format("woff2"), url("/fonts/playfairdisplay/playfairdisplay-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'playfair_displayitalic';
+  src: url("/fonts/playfairdisplay/playfairdisplay-italic-webfont.woff2") format("woff2"), url("/fonts/playfairdisplay/playfairdisplay-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'playfair_displayregular';
+  src: url("/fonts/playfairdisplay/playfairdisplay-regular-webfont.woff2") format("woff2"), url("/fonts/playfairdisplay/playfairdisplay-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/**
+ * Reset some basic elements
+ */
+blockquote,
+body,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+ol,
+p,
+pre,
+ul {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 100%; }
+  @media (max-width: 800px) {
+    html {
+      font-size: 90%; } }
+
+/**
+ * Basic styling
+ */
+body {
+  font-weight: 400;
+  font-family: 16px;
+  line-height: 1.7;
+  font-family: "crimson", serif;
+  color: rgba(30, 30, 30, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  -ms-font-feature-settings: normal; }
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+
+blockquote,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+pre,
+ul {
+  margin-bottom: 2rem; }
+
+h1 {
+  font-size: 275%; }
+
+h2 {
+  font-size: 250%; }
+
+h3 {
+  font-size: 225%; }
+
+h4 {
+  font-size: 200%; }
+
+h5 {
+  font-size: 175%; }
+
+h6 {
+  font-size: 150%; }
+
+p {
+  font-family: "crimson", serif;
+  font-size: 140%;
+  color: rgba(30, 30, 30, 0.9);
+  letter-spacing: -.01em; }
+
+.page-content p:first-of-type:first-letter {
+  font-family: "crimson", serif;
+  font-size: 360%;
+  padding: 0.20em 0.1em 0 0;
+  margin: 0;
+  float: left;
+  line-height: 0.5;
+  font-weight: 400; }
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+/**
+ * Figures
+ */
+figure > img {
+  display: block; }
+
+figcaption {
+  font-size: 14px; }
+
+/**
+ * Lists
+ */
+ol,
+ul {
+  margin-left: 2rem; }
+
+li,
+ol {
+  font-size: 140%; }
+  li > ol,
+  li > ul,
+  ol > ol,
+  ol > ul {
+    margin-bottom: 0; }
+
+/**
+ * Headings
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-family: "playfair_displayregular", sans-serif;
+  color: rgba(30, 30, 30, 0.9); }
+
+/**
+ * Links
+ */
+a {
+  color: rgba(138, 161, 70, 0.9);
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  /* For some Androids */
+  -webkit-transition: all 0.3s linear;
+  /* Saf3.2+, Chrome */
+  /* FF3.7+ */
+  /* Opera 10.5 */
+  transition: all 0.3s linear; }
+  a:visited {
+    color: rgba(138, 161, 70, 0.9); }
+  a:hover {
+    color: rgba(108, 125, 55, 0.9);
+    text-decoration: none;
+    -webkit-transition: color 0.3s linear;
+    /* Saf3.2+, Chrome */
+    /* FF3.7+ */
+    /* Opera 10.5 */
+    transition: color 0.3s linear; }
+
+hr {
+  border: 0;
+  height: 1px;
+  background: rgba(226, 226, 226, 0.9);
+  width: 100%;
+  margin: 0 auto 2rem; }
+
+.hr-space {
+  width: 5em;
+  height: 3px;
+  margin-bottom: 4rem;
+  background: rgba(226, 226, 226, 0.9); }
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  color: rgba(200, 200, 200, 0.9);
+  border-left: 4px solid rgba(226, 226, 226, 0.9);
+  padding-left: 2rem;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+/**
+ * Code formatting
+ */
+code,
+pre {
+  font-size: 15px;
+  border: 1px solid rgba(226, 226, 226, 0.9);
+  border-radius: 3px;
+  background-color: #eef; }
+
+code {
+  padding: 1px 5px; }
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto; }
+  pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0; }
+
+.container {
+  width: 90%;
+  padding: 0 5%;
+  margin: 0 auto;
+  max-width: 780px; }
+  @media (max-width: 400px) {
+    .container {
+      width: 92%;
+      padding: 0 4%;
+      margin: 0 auto; } }
+
+.container-wide {
+  width: 90%;
+  padding: 0 5%;
+  margin: 0 auto; }
+  @media (max-width: 400px) {
+    .container-wide {
+      width: 92%;
+      padding: 0 4%;
+      margin: 0 auto; } }
+
+/**
+ * Clearfix
+ */

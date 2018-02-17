@@ -1,0 +1,20 @@
+<div class="block">
+  <div class="block-news">
+    <div class="block-news-into">
+      
+    </div>
+    {{ range first 4 (where .Data.Pages "Section" "news") }}
+      <div class="block-news-item" style="background-image: url(images-resized/small/{{ .Params.image }});">
+        <div class="block-news-item-overlay {{ .Params.color }}">
+          <div class="block-news-item-date {{ .Params.color }}">
+            {{ .Date.Format "Jan 2, 2006" }}
+          </div>
+          <div class="block-news-item-content">
+              <h4>{{ .Title }}</h4>
+              <a href="{{ .URL }}">Read More <i class="fal fa-long-arrow-right fa-1x"></i></a>
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</div>

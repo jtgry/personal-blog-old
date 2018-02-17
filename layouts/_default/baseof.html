@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{ block "site/meta" . }}{{ partial "site/meta.html" . }}{{ end }}
+
+    <title>{{ block "title" . }}{{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}{{ end }}</title>
+
+    {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }}
+
+    {{ if .RSSLink }}
+        <link href="{{ .RSSLink }}" title="{{ .Site.Title }}" type="application/rss+xml" rel="alternate">
+    {{ end }}
+    <script defer src="/js/fa-light.min.js"></script>
+    <script defer src="/js/fontawesome.min.js"></script>
+    
+  </head>
+  <body>
+  {{ block "navigation" . }}{{ partial "site/navigation.html" . }}{{ end }}
+  {{ block "search" . }}{{ partial "site/search.html" . }}{{ end }}
+
+  {{ block "main" . }}{{ end }}
+
+  {{ block "footer" . }}{{ partial "site/footer.html" . }}{{ end }}
+
+  {{ block "site/scripts" . }}{{ partial "site/scripts.html" . }}{{ end }}
+  </body>
+</html>
