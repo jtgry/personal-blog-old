@@ -23,8 +23,8 @@ $(document).ready(function () {
   sr.reveal('.image', {origin: 'bottom', scale: 1, duration: 1500});
   sr.reveal('button', {origin: 'bottom', scale: 1, duration: 1500});
   sr.reveal('.block-image', {origin: 'bottom', scale: 1, distance: '30px', duration: 2000});
-  sr.reveal('.block-news-item', {origin: 'bottom', scale: 1, duration: 1500 }, 250);
-  sr.reveal('.block-small', {origin: 'bottom', scale: 1, duration: 1500 }, 300);
+  sr.reveal('.block-feature-text', {origin: 'bottom', scale: 1, duration: 1500 }, 250);
+  sr.reveal('.block-feature-image', {origin: 'bottom', scale: 1, duration: 1500 }, 300);
 
   $(window).on('scroll',function() {
       if ($(this).scrollTop() > 400) {
