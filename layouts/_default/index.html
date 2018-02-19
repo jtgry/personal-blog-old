@@ -1,9 +1,19 @@
 {{ define "main" }}
-    {{ block "header" . }}{{ partial "site/header.html" . }}{{ end }}
-    {{ range  where .Data.Pages.ByWeight "Section" "home" }}
-        {{ .Render .Params.layout }}
-    {{ end }}
-    {{ block "contact" . }}{{ partial "site/contact.html" . }}{{ end }}
+  {{ block "header" . }}{{ partial "site/header.html" . }}{{ end }}
+  {{ range  where .Data.Pages.ByWeight "Section" "home" }}
+    {{ .Render .Params.layout }}
+  {{ end }}
+  <section class="block-feature-image">
+    <div class="block-feature-text">
+      <div class="container">
+        <p>My Latest Projects</p>
+      </div>
+    </div>
+  </section>
+  {{ range  where .Data.Pages.ByWeight "Section" "projects" }}
+    {{ .Render .Params.layout }}
+  {{ end }}
+  {{ block "contact" . }}{{ partial "site/contact.html" . }}{{ end }}
 {{ end }}
 
 

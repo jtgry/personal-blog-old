@@ -19,3 +19,18 @@
     </a>
   </div>
 </nav>
+<nav class="mobile-nav">
+    <div class="mobile-nav-items">
+      <ul class="vertical">
+          {{ $currentPage := . }}
+          {{ range .Site.Menus.main }}
+          <li>
+            <a href="{{ .URL }}" class="navbar-item {{ if $currentPage.IsMenuCurrent "main" . }}active{{end}}">{{ .Name }}</a>
+          </li>
+          {{end}}
+          <li>
+              <a class="nav-calltoaction" id="apply" href="#contact" title="Start Your Project">Start Your Project</a>
+          </li>
+        </ul>
+    </div>
+  </nav>

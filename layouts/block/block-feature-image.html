@@ -1,0 +1,13 @@
+<section class="block-feature-image">
+  <h2 class="block-feature-title">{{ .Title }}</h2>
+  <hr class="hr-space" />
+    <div class="block-feature-text">
+      <img class="image" src="{{ .Params.Image }}">
+      <div class="container">
+        <p>{{ .Content }}</p>
+      </div>
+      {{ if isset .Params "website" }}
+        <a href="{{ .Params.website }}" class="button draw">Visit Website</a>
+      {{ end }}
+    </div>
+</section>

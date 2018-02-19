@@ -1,9 +1,15 @@
 <section id="contact" class="block-feature">
   <h2 class="block-feature-title">Contact</h2>
   <hr class="hr-space"/>
+    <div class="block-feature-text">
+      <div class="container">
+        <p>Ready to start your project or just have a question?</p>
+      </div>
+    </div>
     <div class="block-text">
       <div class="container">
-        <form method="post" action="/thanks/" netlify-honeypot="bot-field" data-netlify="true">
+        <h2 class="block-feature-title">Please fill out the form below.</h2>
+        <form method="post" action="/thanks/" name="contact" netlify-honeypot="bot-field" data-netlify="true">
           <label class="hidden">Don’t fill this out: <input name="bot-field"></label>
           <div class="form-group">
             <label class="form-label">What's your name?</label>
@@ -17,9 +23,6 @@
             <label class="form-label" >Message</label>
             <textarea class="form-control" name="message"></textarea>
           </div>
-          <input type="hidden" name="_to" value="tgray.it@gmail.com">
-  
-          <input type="text" name="_gotcha" style="display: none;">
           <button class="button draw" type="submit" value="send">Submit</button>
         </div>
       </form>

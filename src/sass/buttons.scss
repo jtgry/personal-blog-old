@@ -1,5 +1,6 @@
-button {
+button,a.button {
   background: none;
+  display: inline-block;
   border: 0;
   box-sizing: border-box;
   margin: $spacing-unit / 2;
