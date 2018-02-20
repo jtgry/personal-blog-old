@@ -119,13 +119,19 @@ h2.block-feature-title{
 .block-feature-image{
   width: 120%;
   margin-left: -10%;
-  margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit / 2;
   text-align: center;
   background: $color-off-white;
-  padding: $spacing-unit 0;
+  padding: $spacing-unit / 2 0;
   @media (max-width: $laptop) {
     width: 100%;
     margin: 0;
+  }
+  .container p{
+    background: $color-white;
+    padding: $spacing-unit;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
   }
 }
 .block-features{
